@@ -1,0 +1,5 @@
+export { LogoHeader } from './LogoHeader'
+export { SignInForm } from './SignInForm'
+export { SignUpForm } from './SignUpForm'
+export { ResetPassword } from './ResetPassword'
+export { Socials } from './Socials'
