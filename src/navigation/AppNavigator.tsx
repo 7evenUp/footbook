@@ -49,8 +49,8 @@ const AppTabs = () => {
 const Stack = createStackNavigator()
 
 const AppNavigator = () => {
-  // const userIsLogedIn = useSelector(userIsLogedInSelector)
-  const userIsLogedIn = true
+  const userIsLogedIn = useSelector(userIsLogedInSelector)
+  // const userIsLogedIn = true
 
   return (
     <NavigationContainer>

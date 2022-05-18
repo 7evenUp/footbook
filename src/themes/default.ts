@@ -98,6 +98,47 @@ const theme = createTheme({
       textShadowOffset: { width: 0, height: 0 },
       textShadowRadius: 5
     },
+    StatsAccentText: {
+      color: 'black',
+      fontFamily: 'Poppins-Regular',
+      fontSize: 24,
+      lineHeight: 36,
+      textAlign: 'center'
+    },
+    StatsHelpText: {
+      color: 'greyDark',
+      fontFamily: 'Poppins-Regular',
+      fontSize: 16,
+      lineHeight: 24,
+      textAlign: 'center'
+    },
+    StatsHeading: {
+      color: 'black',
+      fontFamily: 'Poppins-Regular',
+      fontSize: 18,
+      lineHeight: 27
+    },
+    StatsActivityInfoText: {
+      color: 'black',
+      fontFamily: 'Poppins-Regular',
+      fontSize: 16,
+      lineHeight: 24
+    },
+    StatsNoneData: {
+      color: 'greenDark',
+      fontFamily: 'Poppins-Bold',
+      fontSize: 64,
+      lineHeight: 96,
+      textShadowColor: 'black',
+      textShadowOffset: { width: 0, height: 0 },
+      textShadowRadius: 5
+    },
+    StatsActivityDate: {
+      color: 'greyLight',
+      fontFamily: 'Poppins-Regular',
+      fontSize: 14,
+      lineHeight: 21
+    },
     Poppins400Size14ColorGreyDark: {
       color: 'greyDark',
       fontFamily: 'Poppins-Regular',
