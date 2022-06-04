@@ -9,13 +9,13 @@ import {
 } from './types'
 
 const initialState: UserState = {
-  isFetching: false,
-  isFetched: false,
-  isLogedIn: false,
   user: {
-    email: ''
+    displayName: '',
+    photoURL: ''
   },
-  error: null
+  loading: false,
+  isLogedIn: false,
+  error: ''
 }
 
 export const userReducer = (state = initialState, action: UserActionTypes): UserState => {
@@ -23,27 +23,24 @@ export const userReducer = (state = initialState, action: UserActionTypes): User
     case USER_SIGNIN:
       return {
         ...state,
-        isFetching: true,
-        isFetched: false
+        loading: true
       }
     case USER_SIGNUP: {
       return {
         ...state,
-        isFetching: true,
-        isFetched: false
+        loading: true,
       }
     }
     case USER_LOGOUT:
       return {
         ...state,
-        isFetching: true,
-        isFetched: false
+        loading: true,
       }
     case USER_SUCCESS:
       return {
         ...state,
         isFetched: true,
-        isFetching: false,
+        loading: false,
         isLogedIn: action.payload.isLogedIn,
         user: action.payload.user
       }

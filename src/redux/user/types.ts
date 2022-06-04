@@ -3,11 +3,13 @@ export interface User {
 }
 
 export interface UserState {
-  isFetching: boolean
-  isFetched: boolean
+  user: {
+    displayName: string | null
+    photoURL: string | null
+  }
   isLogedIn: boolean
-  user: User
-  error: string | null
+  loading: boolean
+  error: string
 }
 
 export const USER_SIGNIN = 'USER_SIGNIN'

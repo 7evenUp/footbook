@@ -14,7 +14,6 @@ export const userFetchingMiddleware: Middleware<{}, RootState> = store => next =
   console.log('=================== INSIDE USER MIDDLEWARE ===================')
 
   if (action.type === USER_SIGNIN) {
-    // firebase.auth().signInWithEmailAndPassword(action.payload.email, action.payload.password)
     signInWithEmailAndPassword(auth, email, password)
       .then(() => store.dispatch(userSuccess({ user: { email: email }, isLogedIn: true })))
       .catch(error => {
